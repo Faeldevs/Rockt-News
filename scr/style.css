@@ -14,7 +14,7 @@
 
 body{
     font-family: 'League Spartan', sans-serif;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.308),rgba(0,0,0,0.75 )), url(../assets/read_news.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.308),rgba(0,0,0,0.75 )), url(./assets/read_news.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
