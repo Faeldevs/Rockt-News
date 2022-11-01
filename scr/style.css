@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+  }
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.308),rgba(0,0,0,0.75 )), url(../assets/read_news.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.principal{
+    padding-left: 2em;
+    background-color: var(--body-bg-color);
+    z-index: 1000;
+    width: 50%;
+    height: 100vh;
+}
+
+/* LOGO */
+
+.principal__logotipo{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+
+.logotipo__imagem{
+    height: 200px;
+    width: 300px;
+}
+ /* TEXTO */
+
+.principal__infos{
+    text-align: justify;
+    width: 90%;
+}
+
+.principal__infos--titulo{
+    color: var(--title-color);
+    font-size: 26px;
+    font-weight: 600;
+    padding: .5em 0;
+}
+
+.principal__infos--span{
+    color: var(--text-color);
+    font-size: 20px;
+    padding: .5em 0;
+}
+
+.principal__infos--texto{
+    color: var(--form-color);
+    font-size: 18px;
+    padding: .5em 0;
+}
+
+/*FORMULARIO*/
+
+.principal__formulario{
+    display: block;
+    padding-top: 2em;
+}
+
+.principal__formulario--titulo{
+    color: var(--form-color);
+    font-size: 18px;
+    padding: 1em 0;
+}
+
+.principal__input{
+    position: absolute;
+    display: flex;
+}
+
+.principal__formulario--form{
+   padding: 12px 2em;
+   width: 60vw;
+   color: var(--body-bg-color);
+}
+
+.principal__formulario--botao{
+    background-color: var(--bg-button-color);
+    background-image: url(../assets/send.svg);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1em 1.7em;
+    border: none;
+    
+}
+
+.principal__formulario--texto{
+    position: relative;
+    bottom: -5em;
+    color: var(--bg-button-color);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.principal__formulario--botao:hover{
+    cursor: pointer;
+    background-color: #5d3fa3fb;
+}
+
+.principal__formulario--botao:active{
+    cursor: pointer;
+    background-color: #7d56dafb;
+}
+
+
+.principal__formulario--form::placeholder{
+    color: var(--form-color);
+    padding-left: 10px;
+   
+}
+
+@media screen and (max-width:980px){
+   .principal{
+        width: 70%;
+    }
+
+    .principal__infos{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0;
+    }
+}
+
